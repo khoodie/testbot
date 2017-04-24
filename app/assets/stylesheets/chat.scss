@@ -1,0 +1,16 @@
+// Place all the styles related to the chat controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.balloon{
+  display: inline-block;
+  position: relative;
+  background: #ccc;
+  height: auto;
+  width: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  padding:5px;
+  margin: 0 auto 10px;
+}

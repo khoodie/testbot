@@ -1,0 +1,47 @@
+<h1 align="center">Simple Chatbot testing</h1>
+<br>
+
+<!--<div class="background" style="background-image:URL(<%= asset_path 'iphone_s.png' %>); background-repeat: no-repeat; background-position: center center; height: 500px; width: auto; ">-->
+
+<div align="center">
+    <div class="main" style="width:50%; height:300px; overflow:scroll">
+            
+                
+        <table  width="100%" border="0" cellspacing="0" cellpadding="0">
+        
+            <% Chat.all.each do |c| %>
+            <%if c.is_man==true%>
+            <td>
+            <img src="/assets/man.png" height="30" width="30" align="center">
+            <p class="balloon"><%=c.content%></p><tr>
+            </td>
+            <%else%>
+            <td align="right" >
+            <p class="balloon" ><%=c.content%></p>
+            <img src="/assets/com.ico" height="30" width="30" align="center">
+            <tr>
+            </td>
+            <%end%>
+            <%end%>
+            
+        
+        
+        </table>
+    </div>
+    
+    <form action="/chat/create">
+    <input type="text" name="content">
+    <input type="submit">
+    </form>
+
+<br>
+ <form action="/chat/destroy">
+ <input type="submit" value="종료하기">
+ </form>
+ 
+ <form action="/chat/new">
+ <input type="submit" value="학습시키기">
+ </form>
+
+</div>
+
