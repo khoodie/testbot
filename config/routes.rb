@@ -1,12 +1,15 @@
 Rails.application.routes.draw do
-  root 'chat#index'
+  # root 'chat#index'
+  root 'chat#view'
   get 'chat/index'
 
   get 'chat/new'
   get 'chat/create'
   get 'chat/learn'
   get 'chat/destroy'
-
+  
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

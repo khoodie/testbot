@@ -4,6 +4,9 @@ class ChatController < ApplicationController
 
   def new
   end
+  
+  def view
+  end
    
   def create
     
